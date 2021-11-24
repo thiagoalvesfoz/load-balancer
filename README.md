@@ -1,5 +1,15 @@
 # Caso de Estudo - Load Balancer
 
+#### Requisitos
+- Vagrant
+- VirtualBox
+
+Como inciar o projeto 
+
+```bash
+vagrant up
+```
+
 Arquitetura do Projeto
 
 ![Arquitetura Info](./docs/arquitetura.jpg)
