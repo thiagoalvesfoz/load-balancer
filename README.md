@@ -1,5 +1,15 @@
 # Caso de Estudo - Load Balancer
 
+#### Requisitos
+- Vagrant
+- VirtualBox
+
+Como inciar o projeto 
+
+```bash
+vagrant up
+```
+
 Arquitetura do Projeto
 
 ![Arquitetura Info](./docs/arquitetura.jpg)
@@ -18,13 +28,13 @@ Gráficos de requisições
 
 ![grafico Info](./docs/grafico1.png)
 
-## Testando com Rate Limit Habilitado
+## Testando com Rate Limit habilitado
 
 É possível notar que as primeiras 11 requisições foram bem sucessidas seguido de algumas falhas alternando com algumas requisições bem sucessidas. Após 40 requisições não houve mais nenhum evento bem sucedido.
 
 ![tabela Info](./docs/tabela2.png)
 
-## Grafico de requisições com Rate Limite Ativado
+## Grafico de requisições com Rate Limite ativado
 
 No gráfico a seguir podemos notar que em pouquíssimo tempo houve um grande número de requisições causando a formando um "U" invertido seguido de uma queda considerável no número de acessos, esse comportamento ocorreu devido a ativação do Rate Limit para o IP de origem penalizando-o com tempo de espera maior.
 
