@@ -41,13 +41,7 @@ Vagrant.configure("2") do |config|
         
             # execute script
             cfg.vm.provision :shell, path: info[:script] if info[:script]
-            
-            # copy files
-            cfg.vm.provision :file,  source: info[:copy], destination: "/home/vagrant/" if info[:copy]
-            
-            # execute command
-            cfg.vm.provision :shell, inline: info[:entrypoint], run: "always" if info[:entrypoint]
-        
+                    
         end #end config
     end #end cluster each
   
